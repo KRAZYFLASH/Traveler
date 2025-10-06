@@ -40,6 +40,23 @@ const userSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
+    dateOfBirth: {
+      type: Date,
+    },
+    gender: {
+      type: String,
+      enum: ["male", "female", "other"],
+    },
+    address: {
+      street: String,
+      city: String,
+      province: String,
+      postalCode: String,
+      country: {
+        type: String,
+        default: "Indonesia",
+      },
+    },
     preferences: {
       notifications: {
         type: Boolean,
@@ -49,6 +66,8 @@ const userSchema = new mongoose.Schema(
         type: Boolean,
         default: true,
       },
+      transportPreference: [String],
+      classPreference: String,
       currency: {
         type: String,
         default: "IDR",

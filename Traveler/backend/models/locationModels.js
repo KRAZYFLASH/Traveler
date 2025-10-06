@@ -37,16 +37,20 @@ const locationSchema = new mongoose.Schema(
       enum: ["airport", "train_station", "bus_terminal", "port", "city"],
     },
     coordinates: {
-      latitude: {
+      lat: {
         type: Number,
         min: [-90, "Latitude must be between -90 and 90"],
         max: [90, "Latitude must be between -90 and 90"],
       },
-      longitude: {
+      lng: {
         type: Number,
         min: [-180, "Longitude must be between -180 and 180"],
         max: [180, "Longitude must be between -180 and 180"],
       },
+    },
+    address: {
+      type: String,
+      trim: true,
     },
     timezone: {
       type: String,
