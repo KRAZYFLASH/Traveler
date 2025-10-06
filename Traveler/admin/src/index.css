@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Original+Surfer&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Spinnaker&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0077B6;
+  --color-secondary: #FF6B35;
+  --color-accent: #FFD60A;
+  --color-neutral-dark: #1C1C1C;
+  --color-neutral-light: #F8F9FA;
+  --color-success: #06D6A0;
+  --color-error: #EF476F;
+
+  --radius-small: 6px;
+  --radius-medium: 12px;
+  --radius-large: 24px;
+}
+
+
+*{
+    /* margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none; */
+    font-family: 'Lato', sans-serif;
+    /* scroll-behavior: smooth; */
+} 
+
+.font-montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-original-surfer{
+    font-family: 'Original Surfer', cursive;
+}
+
+.font-spinnaker{
+    font-family: 'Spinnaker', sans-serif;
+}
+.font-playfair{
+    font-family: 'Playfair Display', serif;
+}
+.font-opensans{
+    font-family: 'Open Sans', sans-serif;
+}
